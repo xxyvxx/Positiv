@@ -1,0 +1,42 @@
+.page{
+    margin: 0;
+    padding: 60px 100px 0 100px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "Space Grotesk", serif;
+    background-color: #fff;
+    color: #000000;
+
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 140px;
+}
+
+:root{
+    --green: #b9ff66;
+	--grey: #f3f3f3;
+	--dark: #191a23;
+	--black: #000;
+}
+
+
+@media screen and (width <= 480px) {
+    .page{
+        padding: 30px 20px 0 20px;
+    }
+
+
+    .content{
+        row-gap: 60px;
+    }
+}
+
+.cont{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+

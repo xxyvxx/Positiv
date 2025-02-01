@@ -1,0 +1,113 @@
+.team__desc{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.team__text{
+    max-width: 473px;
+}
+
+.team__cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    margin-top: 80px;
+}
+
+.team__card{
+    box-sizing: border-box;
+    max-width: 387px;
+    min-height: 354px;
+    border: 1px solid var(--dark);
+    border-radius: 45px;
+    padding: 40px 35px;
+    box-shadow: 0 5px 0 0 var(--dark);
+    background: #fff;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.team__card-icon{
+    position: absolute;
+    top: 40px;
+    right: 35px;
+}
+
+.team__card-cont{
+    display: flex;
+    align-items: end;
+    column-gap: 20px;
+}
+
+.team__card-img{
+    height: auto;
+    width: 100%;
+    max-width: 105px;
+}
+
+
+.team__button{
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+}
+
+.team__button-link{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    box-sizing: border-box;
+    min-width: 269px;
+    text-align: center;
+    border-radius: 14px;
+    padding: 20px 35px;
+    background: var(--dark);
+}
+
+.team__card-desc{
+    padding-top: 28px;
+    border-top: 1px solid var(--black);
+}
+
+
+@media screen and (width <= 430px) {
+    .team__cards{
+        margin-top: 40px;
+    }
+
+    .team__desc{
+        justify-content: center;
+    }
+
+    .team__button-link{
+        width: 390px;
+        max-width: 390px;
+    }
+
+    .team__text{
+        text-align: center;
+    }
+}
+
+@media screen and (width <= 375px) {
+    .team__card-icon{
+        top: 20px;
+        right: 15px;
+    }
+
+    .team__card-img{
+        max-width: 90px;
+    }
+    
+}
